@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Jose Martinez Cardiologo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../CSS/index_style.css" />
+  </head>
+  <body>
+
+    <!-- ======== NAVBAR ======== -->
+    <nav class="navbar">
+      <div class="nav-logo">
+        <span class="logo-icon">&#9829;</span>
+        <span class="logo-text">CardioVida</span>
+
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#perfil" class="active">Perfil del Doctor</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+
+    </nav>
+
+    <!-- ======== HERO / PERFIL ======== -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg-circles">
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+        <div class="circle c3"></div>
+        
+      </div>
+
+      <div class="profile-card" id="perfil">
+        <div class="profile-avatar">
+          <div class="avatar-ring"></div>
+          <img src="../IMG/img.webp" alt="Foto del Dr. Jose Martinez" />
+        </div>
+
+        <h1 class="doctor-name">Dr. Jose Martinez</h1>
+        <p class="doctor-specialty">Especialista en Cardiologi­a</p>
+        <div class="specialty-badge">
+          <span> Colegio de Medicos 
+            <br>
+            Reg. #14782
+          </span>
+        </div>
+
+        <p id="doctor-bio">
+          Con mas de <strong>15 años de experiencia</strong> dedicados al cuidado cardiovascular,
+          el Dr. Martínez ha atendido a miles de pacientes en Costa Rica y Latinoamérica.
+          Formado en la Universidad de Costa Rica y con una especialización en el
+          <em>Hospital Clínico de Barcelona</em>, combina tecnología de punta con un
+          trato humano y cercano que sus pacientes valoran profundamente.
+        </p>
+
+        <div class="stats-row">
+          <div class="stat">
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Años de exp.</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">3.2k</span>
+            <span class="stat-label">Pacientes atendidos</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">98%</span>
+            <span class="stat-label">Satisfacción</span>
+          </div>
+        </div>
+
+        <a href="#contacto" class="btn-cita">Agendar Cita</a>
+      </div>
+    </section>
+
+    <!-- ======== COMENTARIOS ======== -->
+    <section class="reviews-section" id="servicios">
+      <div class="reviews-header">
+        <h2>Lo que dicen nuestros pacientes</h2>
+        <p>Testimonios reales de personas cuyas vidas cambiaron positivamente.</p>
+      </div>
+
+      <div class="reviews-grid">
+
+        <article class="review-card">
+          <div class="review-quote">"</div>
+          <p class="review-text">El Dr. Martínez me brindó un excelente tratamiento, ¡muy profesional y dedicado! Me explicó cada detalle de mi diagnóstico con paciencia.</p>
+          <div class="review-footer">
+            <img class="reviewer-avatar" src="../IMG/client1.webp" alt="María Pérez">
+            <div class="reviewer-info">
+              <span class="reviewer-name">María Pérez</span>
+              <span class="review-date">Consulta: 20 agosto 2023</span>
+            </div>
+            <div class="stars">★ ★ ★ ★ ★</div>
+          </div>
+        </article>
+
+        <article class="review-card featured">
+          <div class="review-quote">"</div>
+          <p class="review-text">Muy atento y cuidadoso en su diagnóstico. Lo recomiendo ampliamente a cualquier persona que necesite atención cardiológica de calidad.</p>
+          <div class="review-footer">
+            <img class="reviewer-avatar" src="../IMG/client3.webp" alt="Juan Ramírez">
+            <div class="reviewer-info">
+              <span class="reviewer-name">Juan Ramírez</span>
+              <span class="review-date">Consulta: 10 setiembre 2023</span>
+            </div>
+            <div class="stars">★ ★ ★ ★ ★</div>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-quote">"</div>
+          <p class="review-text">Gracias a su tratamiento me siento mucho mejor. Excelente doctor, con una calidad humana que va más allá de lo profesional.</p>
+          <div class="review-footer">
+            <img class="reviewer-avatar" src="../IMG/client2.webp" alt="Ana Gómez">
+            <div class="reviewer-info">
+              <span class="reviewer-name">Ana Gómez</span>
+              <span class="review-date">Consulta: 15 setiembre 2023</span>
+            </div>
+            <div class="stars">★ ★ ★ ★ ★</div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ======== CONTACTO ======== -->
+    <section class="contact-section" id="contacto">
+      <h2>Agende su consulta</h2>
+      <p>Clínica Cardiovascular San José · Lunes a Viernes 8 am – 5 pm</p>
+      <div class="contact-details">
+        <span>📅 Sabana Norte, San José, Costa Rica</span>
+        <span>📞 +506 2200-1234</span>
+        <span>✉️ drjose@cardiovida.cr</span>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2024 CardioVida · Todos los derechos reservados · Desarrollado por fbawebsolutions</p>
+    </footer>
+
+  </body>
+</html>
