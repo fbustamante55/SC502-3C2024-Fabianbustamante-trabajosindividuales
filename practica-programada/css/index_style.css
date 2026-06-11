@@ -100,7 +100,6 @@ body {
   background: linear-gradient(145deg, var(--navy) 0%, var(--blue-mid) 60%, #1e6fa8 100%);
 }
 
-/* Decorative background circles */
 .hero-bg-circles { position: absolute; inset: 0; pointer-events: none; }
 
 .circle {
@@ -114,7 +113,6 @@ body {
 .c2 { width: 320px; height: 320px; bottom: -80px; left: -60px; }
 .c3 { width: 180px; height: 180px; top: 40%; left: 10%; opacity: 0.05; }
 
-/* Profile card */
 .profile-card {
   background: var(--white);
   border-radius: 24px;
@@ -133,7 +131,6 @@ body {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* Avatar */
 .profile-avatar {
   position: relative;
   width: 100px;
@@ -174,7 +171,6 @@ body {
   letter-spacing: 0.05em;
 }
 
-/* Name & specialty */
 .doctor-name {
   font-family: 'Playfair Display', serif;
   font-size: 2.1rem;
@@ -201,7 +197,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* Bio – id selector */
 #doctor-bio {
   color: var(--gray-text);
   font-size: 0.95rem;
@@ -212,7 +207,6 @@ body {
   padding-left: 1rem;
 }
 
-/* Stats row */
 .stats-row {
   display: flex;
   justify-content: center;
@@ -249,7 +243,6 @@ body {
   background-color: #d0dde8;
 }
 
-/* CTA button */
 .btn-cita {
   display: inline-block;
   background: linear-gradient(135deg, var(--blue-light), var(--teal));
@@ -296,7 +289,6 @@ body {
   font-size: 0.95rem;
 }
 
-/* Cards grid – Flexbox */
 .reviews-grid {
   display: flex;
   flex-wrap: wrap;
@@ -348,7 +340,6 @@ body {
   padding-top: 1rem;
 }
 
-/* Card footer: flex row */
 .review-footer {
   display: flex;
   align-items: center;
@@ -424,6 +415,114 @@ body {
   gap: 1.5rem;
   font-size: 0.88rem;
   opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+/* =============================================
+   FORMULARIO DE RESERVACIÓN
+   ============================================= */
+#reservation-form {
+  margin-top: 2rem;
+  text-align: left;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.65rem 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+  font-size: 0.9rem;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.input-error {
+  border: 2px solid #e74c3c !important;
+}
+
+.error-msg {
+  color: #ff8080;
+  font-size: 0.82rem;
+  display: block;
+  margin-top: 0.25rem;
+}
+
+.btn-submit {
+  margin-top: 0.5rem;
+  padding: 0.75rem 2rem;
+  background: linear-gradient(135deg, var(--blue-light), var(--teal));
+  color: var(--white);
+  border: none;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(31, 172, 170, 0.45);
+}
+
+#confirmation-card {
+  margin-top: 2rem;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  padding: 2rem;
+  color: var(--white);
+  text-align: left;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#confirmation-card h3 {
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+}
+
+#confirmation-card p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+#btn-nueva {
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  background: var(--teal);
+  color: var(--white);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 0.88rem;
+}
+
+.hidden {
+  display: none;
 }
 
 /* =============================================
@@ -460,4 +559,9 @@ body {
   .reviews-grid { flex-direction: column; align-items: center; }
 
   .review-card { max-width: 100%; }
+
+  #reservation-form,
+  #confirmation-card {
+    max-width: 100%;
+  }
 }

@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../CSS/index_style.css" />
+    <link rel="stylesheet" href="../css/index_style.css" />
   </head>
   <body>
 
@@ -40,7 +40,7 @@
       <div class="profile-card" id="perfil">
         <div class="profile-avatar">
           <div class="avatar-ring"></div>
-          <img src="../IMG/img.webp" alt="Foto del Dr. Jose Martinez" />
+          <img src="../img/img.webp" alt="Foto del Dr. Jose Martinez" />
         </div>
 
         <h1 class="doctor-name">Dr. Jose Martinez</h1>
@@ -94,7 +94,7 @@
           <div class="review-quote">"</div>
           <p class="review-text">El Dr. Martínez me brindó un excelente tratamiento, ¡muy profesional y dedicado! Me explicó cada detalle de mi diagnóstico con paciencia.</p>
           <div class="review-footer">
-            <img class="reviewer-avatar" src="../IMG/client1.webp" alt="María Pérez">
+            <img class="reviewer-avatar" src="../img/client1.webp" alt="María Pérez">
             <div class="reviewer-info">
               <span class="reviewer-name">María Pérez</span>
               <span class="review-date">Consulta: 20 agosto 2023</span>
@@ -107,7 +107,7 @@
           <div class="review-quote">"</div>
           <p class="review-text">Muy atento y cuidadoso en su diagnóstico. Lo recomiendo ampliamente a cualquier persona que necesite atención cardiológica de calidad.</p>
           <div class="review-footer">
-            <img class="reviewer-avatar" src="../IMG/client3.webp" alt="Juan Ramírez">
+            <img class="reviewer-avatar" src="../img/client3.webp" alt="Juan Ramírez">
             <div class="reviewer-info">
               <span class="reviewer-name">Juan Ramírez</span>
               <span class="review-date">Consulta: 10 setiembre 2023</span>
@@ -120,7 +120,7 @@
           <div class="review-quote">"</div>
           <p class="review-text">Gracias a su tratamiento me siento mucho mejor. Excelente doctor, con una calidad humana que va más allá de lo profesional.</p>
           <div class="review-footer">
-            <img class="reviewer-avatar" src="../IMG/client2.webp" alt="Ana Gómez">
+            <img class="reviewer-avatar" src="../img/client2.webp" alt="Ana Gómez">
             <div class="reviewer-info">
               <span class="reviewer-name">Ana Gómez</span>
               <span class="review-date">Consulta: 15 setiembre 2023</span>
@@ -137,15 +137,54 @@
       <h2>Agende su consulta</h2>
       <p>Clínica Cardiovascular San José · Lunes a Viernes 8 am – 5 pm</p>
       <div class="contact-details">
-        <span></span> Sabana Norte, San José, Costa Rica</span>
-        <span> +506 2200-1234</span>
+        <span>📍 Sabana Norte, San José, Costa Rica</span>
+        <span>📞 +506 2200-1234</span>
         <span>✉️ drjose@cardiovida.cr</span>
       </div>
+
+      <form id="reservation-form" novalidate>
+        <div class="form-group">
+          <label for="nombre">Nombre completo *</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej. Ana Rodríguez">
+          <span class="error-msg" id="error-nombre"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="contacto-field">Contacto (teléfono o correo) *</label>
+          <input type="text" id="contacto-field" name="contacto" placeholder="Ej. +506 8888-8888 o correo@ejemplo.com">
+          <span class="error-msg" id="error-contacto-field"></span>
+
+        </div>
+
+        <div class="form-group">
+          <label for="fecha">Fecha de reservación *</label>
+          <input type="date" id="fecha" name="fecha">
+          <span class="error-msg" id="error-fecha"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="personas">Número de personas *</label>
+          <input type="number" id="personas" name="personas" min="1" placeholder="Ej. 2">
+          <span class="error-msg" id="error-personas"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="comentarios">Comentarios *</label>
+          <textarea id="comentarios" name="comentarios" rows="4" placeholder="Motivo de la consulta..."></textarea>
+          <span class="error-msg" id="error-comentarios"></span>
+        </div>
+
+        <button type="submit" class="btn-submit">Confirmar Reservación</button>
+      </form>
+
+      <div id="confirmation-card" class="hidden"></div>
     </section>
+
 
     <footer class="footer">
       <p>© 2024 CardioVida · Todos los derechos reservados · Desarrollado por fbawebsolutions</p>
     </footer>
 
+     <script src="../js/script.js"></script>
   </body>
 </html>
